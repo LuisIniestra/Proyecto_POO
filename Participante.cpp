@@ -2,8 +2,8 @@
 #include <iostream>
 using namespace std;
 
-Participante::Participante(string n, float saldoInicial)
-:Jugador(n, saldoInicial){}
+Participante::Participante(string n)
+:Jugador(n){}
 
 int Participante::decidirAccion(){
     int opcion;
