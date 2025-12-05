@@ -4,10 +4,10 @@
 using namespace std;
 
 int main(){
-    srand(time(NULL));
+    srand(time(0));
 
     JuegoBlackjack juego;
-    juego.agregarJugador(new Participante("Jugador",0));
+    juego.agregarJugador(new Participante("Usuario"));
 
     int opcion = 0;
 
