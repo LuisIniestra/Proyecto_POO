@@ -6,7 +6,7 @@ using namespace std;
 
 class Participante : public Jugador {
 public:
-    Participante(string n, float saldoInicial);
+    Participante(string n);
     int decidirAccion();
 };
 
