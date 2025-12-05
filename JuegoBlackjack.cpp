@@ -21,11 +21,9 @@ void JuegoBlackjack::jugarRonda(){
         crupier.recibirCarta(baraja.repartir());
     }
 
-    cout << endl << "======================" << endl;
     cout << "Carta visible del crupier:" << endl;
     crupier.getMano().mostrarPrimeraCarta();
-    cout << "(Segunda carta oculta)" << endl;
-    cout << "======================" << endl;
+    cout << "Segunda carta oculta" << endl;
 
     for(int i = 0; i < jugadores.size(); i++){
         Participante* j = jugadores[i];
@@ -53,7 +51,7 @@ void JuegoBlackjack::jugarRonda(){
         }
     }
 
-    cout << endl << "===== Turno del crupier =====" << endl;
+    cout << endl << "Turno del crupier." << endl;
     crupier.getMano().mostrar();
 
     int turnoCrupier = 1;
