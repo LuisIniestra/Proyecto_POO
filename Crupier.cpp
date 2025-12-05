@@ -1,6 +1,6 @@
 #include "Crupier.h"
 
-Crupier::Crupier():Jugador("Crupier",0){}
+Crupier::Crupier():Jugador("Crupier"){}
 
 int Crupier::decidirAccion(){
     int puntos = mano.calcularPuntaje();
