@@ -8,15 +8,12 @@ using namespace std;
 class Jugador {
 protected:
     string nombre;
-    float saldo;
     Mano mano;
 
 public:
-    Jugador(string n, float s);
+    Jugador(string n);
     string getNombre() const;
-    float getSaldo() const;
     Mano& getMano();
-    void ajustarSaldo(float monto);
     void recibirCarta(const Carta& c);
     void resetearMano();
     virtual int decidirAccion();
